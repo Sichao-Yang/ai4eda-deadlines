@@ -20,31 +20,50 @@
     var CONFIG = {"hostname":"sichao-yang.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Hi, welcome. I&#39;m SichaoYang, PhD, researcher, interest in applied math, currently with X-Epic.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="scy&#39;s space">
-<meta property="og:url" content="http://sichao-yang.github.io/index.html">
+  <meta name="description" content="ML for Verification现状综述Author：Sichao Yang Last update: 20230223 [toc] 1. 前言近年来，AI（人工智能）特别是其领域内的ML（机器学习）和DL（深度学习）技术，已在诸多应用领域取得了突破。在传统的半导体领域，研究者们也探索了基于机器学习的芯片设计新方法。这些新算法通常会反映在EDA（芯片设计自动化工具）上。因此，这一研究方向通常">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ML for Verification in EDA">
+<meta property="og:url" content="http://sichao-yang.github.io/2023/02/24/ML-for-Verification-in-EDA/index.html">
 <meta property="og:site_name" content="scy&#39;s space">
-<meta property="og:description" content="Hi, welcome. I&#39;m SichaoYang, PhD, researcher, interest in applied math, currently with X-Epic.">
+<meta property="og:description" content="ML for Verification现状综述Author：Sichao Yang Last update: 20230223 [toc] 1. 前言近年来，AI（人工智能）特别是其领域内的ML（机器学习）和DL（深度学习）技术，已在诸多应用领域取得了突破。在传统的半导体领域，研究者们也探索了基于机器学习的芯片设计新方法。这些新算法通常会反映在EDA（芯片设计自动化工具）上。因此，这一研究方向通常">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230116154125208.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230220163302592.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230220163355440.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230220172715921.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230220170130535.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230217202101654.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230220171243952.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230118221831068.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230118221942757.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230220172026039.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230217231250631.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230220172008118.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230119100900838.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230119101213153.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230119101840925.png">
+<meta property="og:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230221095053161.png">
+<meta property="article:published_time" content="2023-02-24T04:34:11.000Z">
+<meta property="article:modified_time" content="2023-02-24T04:37:26.073Z">
 <meta property="article:author" content="Sichao Yang">
 <meta property="article:tag" content="machine learning, mathematical logic, optimization, CS">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://sichao-yang.github.io/ml_for_veri/image-20230116154125208.png">
 
-<link rel="canonical" href="http://sichao-yang.github.io/">
+<link rel="canonical" href="http://sichao-yang.github.io/2023/02/24/ML-for-Verification-in-EDA/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>scy's space</title>
+  <title>ML for Verification in EDA | scy's space</title>
   
 
 
@@ -255,9 +274,10 @@ mjx-container[display="true"] + br {
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -273,10 +293,9 @@ mjx-container[display="true"] + br {
       <meta itemprop="name" content="scy's space">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/02/24/ML-for-Verification-in-EDA/" class="post-title-link" itemprop="url">ML for Verification in EDA</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          ML for Verification in EDA
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -300,7 +319,7 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="ML-for-Verification现状综述"><a href="#ML-for-Verification现状综述" class="headerlink" title="ML for Verification现状综述"></a>ML for Verification现状综述</h1><p>Author：Sichao Yang</p>
+        <h1 id="ML-for-Verification现状综述"><a href="#ML-for-Verification现状综述" class="headerlink" title="ML for Verification现状综述"></a>ML for Verification现状综述</h1><p>Author：Sichao Yang</p>
 <p>Last update: 20230223</p>
 <p>[toc]</p>
 <h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h1><p>近年来，AI（人工智能）特别是其领域内的ML（机器学习）和DL（深度学习）技术，已在诸多应用领域取得了突破。在传统的半导体领域，研究者们也探索了基于机器学习的芯片设计新方法。这些新算法通常会反映在EDA（芯片设计自动化工具）上。因此，这一研究方向通常可以被称为【ML for EDA】，业界针对【ml for EDA】的介绍和综述文章已经有很多了<sup><a href="#fn_1" id="reffn_1">1</a></sup><sup><a href="#fn_2" id="reffn_2">2</a></sup><sup><a href="#fn_3" id="reffn_3">3</a></sup><sup><a href="#fn_4" id="reffn_4">4</a></sup>，但还没有专门针对【ML for Verification】的文章，本文希望能弥补这样的空白，帮助读者梳理该研究方向上的历史，现状及发展。</p>
@@ -465,21 +484,23 @@ mjx-container[display="true"] + br {
 <p><sup><a href="#fn_4" id="reffn_4">4</a></sup>:黄宇. “华为海思半导体清华大学EDA讲座—AI for EDA”. 2022.</p>
 <p><sup><a href="#fn_5" id="reffn_5">5</a></sup>:Chen, Wen, Sandip Ray, Jayanta Bhadra, Magdy Abadir, and Li-C Wang. “Challenges and Trends in Modern SoC Design Verification.” <em>IEEE Design &amp; Test</em> 34, no. 5 (October 2017): 7–22. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/MDAT.2017.2735383">https://doi.org/10.1109/MDAT.2017.2735383</a>.<br><sup><a href="#fn_6" id="reffn_6">6</a></sup>:Yang, Haoyu, Piyush Pathak, Frank Gennari, Ya-Chieh Lai, and Bei Yu. “DeePattern: Layout Pattern Generation with Transforming Convolutional Auto-Encoder.” In <em>Proceedings of the 56th Annual Design Automation Conference 2019</em>, 1–6. Las Vegas NV USA: ACM, 2019. <a target="_blank" rel="noopener" href="https://doi.org/10.1145/3316781.3317795">https://doi.org/10.1145/3316781.3317795</a>.<br><sup><a href="#fn_7" id="reffn_7">7</a></sup>:Pearce, Hammond, Benjamin Tan, and Ramesh Karri. “DAVE: Deriving Automatically Verilog from English.” In <em>Proceedings of the 2020 ACM/IEEE Workshop on Machine Learning for CAD</em>, 27–32. Virtual Event Iceland: ACM, 2020. <a target="_blank" rel="noopener" href="https://doi.org/10.1145/3380446.3430634">https://doi.org/10.1145/3380446.3430634</a>.<br><sup><a href="#fn_8" id="reffn_8">8</a></sup>:Poulos, Zissis, and Andreas Veneris. “Clustering-Based Failure Triage for RTL Regression Debugging.” In <em>2014 International Test Conference</em>, 1–10. Seattle, WA, USA: IEEE, 2014. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/TEST.2014.7035339">https://doi.org/10.1109/TEST.2014.7035339</a>.<br><sup><a href="#fn_9" id="reffn_9">9</a></sup>:Bahar, R. Iris, Alex K. Jones, Srinivas Katkoori, Patrick H. Madden, Diana Marculescu, and Igor L. Markov. “Workshops on Extreme Scale Design Automation (ESDA) Challenges and Opportunities for 2025 and Beyond.” arXiv, 2020. <a target="_blank" rel="noopener" href="https://doi.org/10.48550/ARXIV.2005.01588">https://doi.org/10.48550/ARXIV.2005.01588</a>.<br><sup><a href="#fn_10" id="reffn_10">10</a></sup>:Chen, Wen, Sandip Ray, Jayanta Bhadra, Magdy Abadir, and Li-C Wang. “Challenges and Trends in Modern SoC Design Verification.” <em>IEEE Design &amp; Test</em> 34, no. 5 (October 2017): 7–22. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/MDAT.2017.2735383">https://doi.org/10.1109/MDAT.2017.2735383</a>.<br><sup><a href="#fn_11" id="reffn_11">11</a></sup>:Rapp, Martin, Hussam Amrouch, Yibo Lin, Bei Yu, David Z. Pan, Marilyn Wolf, and Jorg Henkel. “MLCAD: A Survey of Research in Machine Learning for CAD Keynote Paper.” <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</em> 41, no. 10 (October 2022): 3162–81. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/TCAD.2021.3124762">https://doi.org/10.1109/TCAD.2021.3124762</a>.<br><sup><a href="#fn_12" id="reffn_12">12</a></sup>:Vasudevan, Shobha, David Sheridan, Sanjay Patel, David Tcheng, Bill Tuohy, and Daniel Johnson. “GoldMine: Automatic Assertion Generation Using Data Mining and Static Analysis.” In <em>2010 Design, Automation &amp; Test in Europe Conference &amp; Exhibition (DATE 2010)</em>, 626–29. Dresden: IEEE, 2010. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/DATE.2010.5457129">https://doi.org/10.1109/DATE.2010.5457129</a>.<br><sup><a href="#fn_13" id="reffn_13">13</a></sup>:Lingyi Liu, and S Vasudevan. “Efficient Validation Input Generation in RTL by Hybridized Source Code Analysis.” In <em>2011 Design, Automation &amp; Test in Europe</em>, 1–6. Grenoble: IEEE, 2011. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/DATE.2011.5763253">https://doi.org/10.1109/DATE.2011.5763253</a>.<br><sup><a href="#fn_14" id="reffn_14">14</a></sup>:Liu, Lingyi, David Sheridan, William Tuohy, and Shobha Vasudevan. “A Technique for Test Coverage Closure Using GoldMine.” <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</em> 31, no. 5 (May 2012): 790–803. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/TCAD.2011.2177461">https://doi.org/10.1109/TCAD.2011.2177461</a>.<br><sup><a href="#fn_15" id="reffn_15">15</a></sup>:Vasudevan, Shobha, Wenjie Jiang, David Bieber, Rishabh Singh, Hamid Shojaei, Richard Ho, and Charles Sutton. “Learning Semantic Representations to Verify Hardware Designs,” n.d., 14.<br><sup><a href="#fn_16" id="reffn_16">16</a></sup>:Poulos, Zissis, and Andreas Veneris. “Failure Triage in RTL Regression Verification.” <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</em> 37, no. 9 (September 2018): 1893–1906. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/TCAD.2017.2783303">https://doi.org/10.1109/TCAD.2017.2783303</a>.<br><sup><a href="#fn_17" id="reffn_17">17</a></sup>:Poulos, Zissis, and Andreas Veneris. “Clustering-Based Failure Triage for RTL Regression Debugging.” In <em>2014 International Test Conference</em>, 1–10. Seattle, WA, USA: IEEE, 2014. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/TEST.2014.7035339">https://doi.org/10.1109/TEST.2014.7035339</a>.<br><sup><a href="#fn_18" id="reffn_18">18</a></sup>:Maksimovic, Djordje, Andreas Veneris, and Zissis Poulos. “Clustering-Based Revision Debug in Regression Verification.” In <em>2015 33rd IEEE International Conference on Computer Design (ICCD)</em>, 32–37. New York City, NY, USA: IEEE, 2015. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/ICCD.2015.7357081">https://doi.org/10.1109/ICCD.2015.7357081</a>.<br><sup><a href="#fn_19" id="reffn_19">19</a></sup>:Veira, Neil, Zissis Poulos, and Andreas Veneris. “Searching for Bugs Using Probabilistic Suspect Implications.” <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</em> 39, no. 12 (December 2020): 5267–80. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/TCAD.2020.2966448">https://doi.org/10.1109/TCAD.2020.2966448</a>.<br><sup><a href="#fn_20" id="reffn_20">20</a></sup>:Tal Kolan, Intel, Israel. “ML-Based Validation: a journey in the making.” Plenary 4, MLCAD 2021<br><sup><a href="#fn_21" id="reffn_21">21</a></sup>:Synopsys. “AI 赋能实现更快、 更好、 更高效的芯片验证.” White paper. 2022<br><sup><a href="#fn_22" id="reffn_22">22</a></sup>:Xu, L., F. Hutter, H. H. Hoos, and K. Leyton-Brown. “SATzilla: Portfolio-Based Algorithm Selection for SAT.” <em>Journal of Artificial Intelligence Research</em> 32 (July 1, 2008): 565–606. <a target="_blank" rel="noopener" href="https://doi.org/10.1613/jair.2490">https://doi.org/10.1613/jair.2490</a>.<br><sup><a href="#fn_23" id="reffn_23">23</a></sup>:Lagoudakis, Michail G., and Michael L. Littman. “Learning to Select Branching Rules in the DPLL Procedure for Satisfiability.” <em>Electronic Notes in Discrete Mathematics</em> 9 (June 2001): 344–59. <a target="_blank" rel="noopener" href="https://doi.org/10.1016/S1571-0653(04)00332-4">https://doi.org/10.1016/S1571-0653(04)00332-4</a>.<br><sup><a href="#fn_24" id="reffn_24">24</a></sup>:Amizadeh, Saeed, Sergiy Matusevych, and Markus Weimer. “LEARNING TO SOLVE CIRCUIT-SAT: AN UNSUPERVISED DIFFERENTIABLE APPROACH,” 2019.<br><sup><a href="#fn_25" id="reffn_25">25</a></sup>:Selsam, Daniel, Matthew Lamm, Benedikt Bünz, Percy Liang, Leonardo de Moura, and David L. Dill. “Learning a SAT Solver from Single-Bit Supervision.” arXiv, March 11, 2019. <a target="_blank" rel="noopener" href="http://arxiv.org/abs/1802.03685">http://arxiv.org/abs/1802.03685</a>.<br><sup><a href="#fn_26" id="reffn_26">26</a></sup>:Pira, Einollah, Vahid Rafe, and Amin Nikanjam. “Searching for Violation of Safety and Liveness Properties Using Knowledge Discovery in Complex Systems Specified through Graph Transformations.” <em>Information and Software Technology</em> 97 (May 2018): 110–34. <a target="_blank" rel="noopener" href="https://doi.org/10.1016/j.infsof.2018.01.004">https://doi.org/10.1016/j.infsof.2018.01.004</a>.<br><sup><a href="#fn_27" id="reffn_27">27</a></sup>:Dang, Yingnong, Rongxin Wu, Hongyu Zhang, Dongmei Zhang, and Peter Nobel. “ReBucket: A Method for Clustering Duplicate Crash Reports Based on Call Stack Similarity.” In <em>2012 34th International Conference on Software Engineering (ICSE)</em>, 1084–93. Zurich: IEEE, 2012. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/ICSE.2012.6227111">https://doi.org/10.1109/ICSE.2012.6227111</a>.<br><sup><a href="#fn_28" id="reffn_28">28</a></sup>:Ravitzki, Anna M. “The Big Data Revolution Beautiful Servant or Dangerous Monster?,” 2018.<br><sup><a href="#fn_29" id="reffn_29">29</a></sup>:Illetskova, Marketa, Alex R. Bertels, Joshua M. Tuggle, Adam Harter, Samuel Richter, Daniel R. Tauritz, Samuel Mulder, Denis Bueno, Michelle Leger, and William M. Siever. “Improving Performance of CDCL SAT Solvers by Automated Design of Variable Selection Heuristics.” In <em>2017 IEEE Symposium Series on Computational Intelligence (SSCI)</em>, 1–8. Honolulu, HI: IEEE, 2017. <a target="_blank" rel="noopener" href="https://doi.org/10.1109/SSCI.2017.8280953">https://doi.org/10.1109/SSCI.2017.8280953</a>.</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+
+
+        
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -532,6 +553,7 @@ mjx-container[display="true"] + br {
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ML-for-Verification%E7%8E%B0%E7%8A%B6%E7%BB%BC%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">ML for Verification现状综述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E5%89%8D%E8%A8%80"><span class="nav-number">2.</span> <span class="nav-text">1. 前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E8%83%8C%E6%99%AF%E4%BB%8B%E7%BB%8D"><span class="nav-number">3.</span> <span class="nav-text">2. 背景介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E4%BB%80%E4%B9%88%E6%98%AFverification-in-EDA"><span class="nav-number">3.1.</span> <span class="nav-text">2.1. 什么是verification in EDA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-%E4%BB%80%E4%B9%88%E6%98%AFML"><span class="nav-number">3.2.</span> <span class="nav-text">2.2. 什么是ML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A0%94%E7%A9%B6ML-for-verification"><span class="nav-number">3.3.</span> <span class="nav-text">2.3 为什么研究ML for verification</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E5%AD%A6%E7%95%8C%E5%B7%A5%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">3. 学界工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-%E6%A6%82%E8%A6%81"><span class="nav-number">4.1.</span> <span class="nav-text">3.1. 概要</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-1-%E8%B6%8B%E5%8A%BF"><span class="nav-number">4.1.1.</span> <span class="nav-text">4.1.1 趋势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-2-%E5%88%86%E7%B1%BB"><span class="nav-number">4.1.2.</span> <span class="nav-text">3.1.2 分类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-%E5%85%B7%E4%BD%93%E4%BB%8B%E7%BB%8D"><span class="nav-number">4.2.</span> <span class="nav-text">3.2. 具体介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-1-%E6%B5%8B%E8%AF%95%E6%95%88%E7%8E%87"><span class="nav-number">4.2.1.</span> <span class="nav-text">3.2.1 测试效率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-2-%E8%B0%83%E8%AF%95%E6%95%88%E7%8E%87"><span class="nav-number">4.2.2.</span> <span class="nav-text">3.2.2 调试效率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-3-SAT-%E6%B1%82%E8%A7%A3%E5%99%A8"><span class="nav-number">4.2.3.</span> <span class="nav-text">3.2.3 SAT 求解器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-3-1-%E5%90%AF%E5%8F%91%E5%BC%8F%E9%80%89%E6%8B%A9"><span class="nav-number">4.2.3.1.</span> <span class="nav-text">3.2.3.1 启发式选择</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-3-2-%E7%AB%AF%E5%88%B0%E7%AB%AF"><span class="nav-number">4.2.3.2.</span> <span class="nav-text">3.2.3.2 端到端</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-4-%E6%A8%A1%E5%9E%8B%E6%A3%80%E6%B5%8B"><span class="nav-number">4.2.4.</span> <span class="nav-text">3.2.4 模型检测</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E5%95%86%E4%B8%9A%E8%90%BD%E5%9C%B0"><span class="nav-number">5.</span> <span class="nav-text">4. 商业落地</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-%E6%8C%91%E6%88%98"><span class="nav-number">6.</span> <span class="nav-text">5. 挑战</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-%E7%BB%93%E8%AF%AD"><span class="nav-number">7.</span> <span class="nav-text">6. 结语</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">8.</span> <span class="nav-text">Reference</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
