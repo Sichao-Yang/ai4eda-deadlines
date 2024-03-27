@@ -1,0 +1,234 @@
+<mxfile host="app.diagrams.net" modified="2022-01-23T05:28:34.714Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="-r9K3avUWfp-IYjNPSvR" version="16.4.5" type="github">
+  <diagram id="WIHnWc6ceRGbS43_O5N4" name="Page-1">
+    <mxGraphModel dx="1852" dy="3342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-1" target="FeF34nxTBi7OvhFDxZFh-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-1" target="FeF34nxTBi7OvhFDxZFh-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-1" target="FeF34nxTBi7OvhFDxZFh-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-1" value="确定目前状态" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-2" target="FeF34nxTBi7OvhFDxZFh-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-2" value="start training" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="60" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-3" target="FeF34nxTBi7OvhFDxZFh-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-3" value="竞技表现" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-6" target="FeF34nxTBi7OvhFDxZFh-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-6" value="身体水平" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-7" value="肌力" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-10" value="灵活度" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-12" target="FeF34nxTBi7OvhFDxZFh-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-12" value="阶段一：耐力" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-14" target="FeF34nxTBi7OvhFDxZFh-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-14" target="FeF34nxTBi7OvhFDxZFh-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-14" value="阶段二：速度" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-16" value="技术水平" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-18" target="FeF34nxTBi7OvhFDxZFh-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-18" value="5k/10k/HM/FM历史表现" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="FeF34nxTBi7OvhFDxZFh-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="FeF34nxTBi7OvhFDxZFh-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-24" value="能力分组" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-28" target="FeF34nxTBi7OvhFDxZFh-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-28" value="耐力水平，可支配时间，接触长跑历史" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-33" target="FeF34nxTBi7OvhFDxZFh-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-33" value="伤病历史" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-37" value="训练频率" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-39" value="重点关注" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-41" target="FeF34nxTBi7OvhFDxZFh-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-41" value="身体水平" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-42" target="FeF34nxTBi7OvhFDxZFh-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-42" value="肌力" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-43" target="FeF34nxTBi7OvhFDxZFh-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-43" value="技术水平" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-46" target="FeF34nxTBi7OvhFDxZFh-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-46" target="FeF34nxTBi7OvhFDxZFh-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-46" target="FeF34nxTBi7OvhFDxZFh-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-46" value="测试" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="185" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-51" target="FeF34nxTBi7OvhFDxZFh-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-51" value="监控指标" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-53" value="最大动态心率" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-55" target="FeF34nxTBi7OvhFDxZFh-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-55" value="最大心测试：教练协助 n x 400m跑（组间休息1-2分钟，每组提速30s）" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-59" target="FeF34nxTBi7OvhFDxZFh-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-59" target="FeF34nxTBi7OvhFDxZFh-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-59" value="关节活动度测试：肩/髋/膝/踝" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="-10" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-61" value="ABC分级" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="-10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-63" value="是否肌力不平衡，是否存在明显短板" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-65" target="FeF34nxTBi7OvhFDxZFh-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-65" value="技术动作掌握程度" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-67" value="ABC分级" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-69" target="FeF34nxTBi7OvhFDxZFh-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-69" value="问卷" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="210" y="180" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-72" target="FeF34nxTBi7OvhFDxZFh-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="440" />
+              <mxPoint x="540" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-72" target="FeF34nxTBi7OvhFDxZFh-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-72" target="FeF34nxTBi7OvhFDxZFh-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-72" value="90分钟心率测试" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-77" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="450" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-78" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="415" y="490" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-79" target="FeF34nxTBi7OvhFDxZFh-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-79" target="FeF34nxTBi7OvhFDxZFh-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-79" value="阶段三：速度+耐力" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-81" target="FeF34nxTBi7OvhFDxZFh-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-81" value="阶段四：竞赛期" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-84" value="马拉松日" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="820" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-86" target="FeF34nxTBi7OvhFDxZFh-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-86" value="10k测试" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="570" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FeF34nxTBi7OvhFDxZFh-87">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-87" value="HM测试" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="670" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FeF34nxTBi7OvhFDxZFh-90" value="重分组" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="585" width="100" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
