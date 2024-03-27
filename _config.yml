@@ -1,5 +1,18 @@
-title: This is a test page
-description: test test test
-theme: jekyll-theme-minimal
-domain: sichao-yang.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-baseurl: https://sichao-yang.github.io/   # place folder name if the site is served in a 
+title: xxx Conference Deadlines
+description: Countdowns to top xxx conference deadlines.
+author: SichaoYang
+
+# domain: "gy-hu.github.io"
+# baseurl: "https://gy-hu.github.io/EDA_FV_conference_deadline"
+
+github_username: Sichao-Yang
+github_repo: Sichao-Yang.github.io
+
+
+# domain: "sec-deadlines.github.io"
+# baseurl: ""
+# github_username: sec-deadlines
+# github_repo: sec-deadlines
+
+markdown: kramdown
+
