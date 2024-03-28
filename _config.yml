@@ -2,11 +2,11 @@ title: xxx Conference Deadlines
 description: Countdowns to top xxx conference deadlines.
 author: SichaoYang
 
-# domain: "gy-hu.github.io"
-# baseurl: "https://gy-hu.github.io/EDA_FV_conference_deadline"
+domain: "sichao-yang.github.io"
+baseurl: "https://sichao-yang.github.io/ai4eda-deadlines"
 
 github_username: Sichao-Yang
-github_repo: Sichao-Yang.github.io
+github_repo: ai4eda-deadlines
 
 
 # domain: "sec-deadlines.github.io"
