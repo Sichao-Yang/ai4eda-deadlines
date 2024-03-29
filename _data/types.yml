@@ -5,11 +5,5 @@
   tag: FV
 - name: Machine Learning
   tag: ML
-- name: Testing
-  tag: TES
-- name: Control Systems
-  tag: CS
-- name: Planning
-  tag: PG
-- name: Programming Languages
-  tag: PL
+- name: Software Engineering
+  tag: SE

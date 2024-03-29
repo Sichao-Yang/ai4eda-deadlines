@@ -1,19 +1,24 @@
 ---
 ---
 <html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  
-      <title>{{ site.title }}</title>
-      <meta name="description" content="{{ site.description }}">
-      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="{{ "/static/css/deadlines.css" | prepend:site.baseurl }}" media="screen,projection">
-      <link rel="shortcut icon" href="{{ "/static/img/favicon.png" | prepend:site.baseurl }}">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    </head>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ " /static/css/deadlines.css" | prepend:site.baseurl }}"
+    media="screen,projection">
+  <link rel="shortcut icon" href="{{ " /static/img/favicon.png" | prepend:site.baseurl }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
 <body>
   <div class="top-strip"></div>
   <div class="container">
@@ -34,8 +39,14 @@
         <div class="col-xs-12">
           {{ site.description }}
           <p>To add/update a conference, <a target="_blank"
-              href="//github.com/{{ site.github_username }}/{{ site.github_repo }}">send in a pull request</a>.
-          <p>Last update: {{ site.time | date: "%-d %B %Y" }}
+              href="//github.com/{{ site.github_username }}/{{ site.github_repo }}">send in a pull request</a>.</p>
+          <p>Last update: {{ site.time | date: "%-d %B %Y" }}</p>
+          <p>Other useful deadline websites:
+            <ul>
+            <li><a href="https://aideadlin.es/?sub=ML,NLP,DM,AP,KR">AI Deadlines</a></li>  
+            <li><a href="https://conferencelist.info/upcoming/">Conference List</a></li>
+            </ul>
+          </p>
         </div>
       </div>
       <hr>

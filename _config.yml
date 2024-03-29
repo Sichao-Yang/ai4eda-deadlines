@@ -1,9 +1,10 @@
 title: AI4EDA Conference Deadlines
-description: Countdowns to top AI4EDA conference deadlines.
+description: Countdowns to top AI4EDA Conferences.
 author: SichaoYang
 
 domain: "sichao-yang.github.io"
-baseurl: "https://sichao-yang.github.io/ai4eda-deadlines"
+# local debug: comment out baseurl and run `bundle exec jekyll serve`
+# baseurl: "https://sichao-yang.github.io/ai4eda-deadlines"
 
 github_username: Sichao-Yang
 github_repo: ai4eda-deadlines

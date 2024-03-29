@@ -1,4 +1,113 @@
 ---
+# - name: 
+#   year: 2024
+#   date: "Oct 6 - 11"
+#   description:  The International Conference on 
+#   link: 
+#   deadline: ["2023-04-04 23:59"]
+#   place: 
+#   tags: [SE]
+
+- name: ICPC
+  year: 2024
+  date: "April 15 - 16"
+  description:  The International Conference on 
+  link: https://conf.researchr.org/track/icpc-2024/icpc-2024-research?#Call-for-Papers
+  deadline: ["2023-10-30 23:59"]
+  place: Lisbon, Portugal
+  tags: [SE]
+
+- name: TWC
+  year: 2024
+  date: "May 13 - 17"
+  description:  The Web Conference
+  link: https://www2024.thewebconf.org/
+  deadline: ["2023-10-05 23:59"]
+  place: Singapore
+  tags: [SE]
+
+- name: ICSME
+  year: 2024
+  date: "Oct 6 - 11"
+  description:  The International Conference on Software Maintenance and Evolution
+  link: https://conf.researchr.org/track/icsme-2024/icsme-2024-papers
+  deadline: ["2024-04-04 23:59"]
+  place: Flagstaff, AZ, USA
+  tags: [SE]
+
+- name: ICWS
+  year: 2024
+  date: "July 7 - 13"
+  description:  The International Conference on Web Services
+  link: https://icws.conferences.computer.org/2024/call-for-papers/
+  deadline: ["2024-03-31 23:59"]
+  place: Shenzhen, China
+  tags: [SE]
+
+
+- name: FSE
+  year: 2024
+  date: "July 15 - 19"
+  description:  The ACM International Conference on the Foundations of Software Engineering 
+  link: https://2024.esec-fse.org/
+  deadline: ["2023-09-28 23:59"]
+  place: Porto de Galinhas, Brazil
+  tags: [SE]
+
+- name: CIKM
+  year: 2024
+  date: "October 21 - 25"
+  description:  The International Conference on Network and Service Management
+  link: https://cikm2024.org/call-for-papers/
+  deadline: ["2024-05-13 23:59"]
+  place: Boise, Idaho, USA
+  tags: [SE]
+
+- name: CNSM
+  year: 2024
+  date: "October 28 - 31"
+  description:  The International Conference on Network and Service Management
+  link: http://www.cnsm-conf.org/2024/
+  deadline: ["2024-07-01 23:59"]
+  place: Prague, Czech Republic
+  tags: [SE]
+
+- name: ICIKM
+  year: 2024
+  date: "June 21 - 23"
+  description:  The International Conference on Innovation, Knowledge, and Management
+  link: https://www.icikm.org/index.html
+  deadline: ["2024-03-30 23:59"]
+  place: Rome, Italy
+  tags: [SE]
+
+- name: ICDM
+  year: 2024
+  date: "December 9 - 12"
+  description:  The International Conference on Data Mining
+  link: https://icdm2024.org/
+  deadline: ["2024-06-14 23:59"]
+  place: Abu Dhabi, UAE
+  tags: [SE]
+
+- name: MSR
+  year: 2024
+  date: "April 15 - 16"
+  description:  The International Conference on Mining Software Repositories
+  link: https://2024.msrconf.org/
+  deadline: ["2023-11-14 23:59"]
+  place: Lisbon, Portugal
+  tags: [SE]
+
+- name: ICSE
+  year: 2024
+  date: "April 14 - 20"
+  description:  The International Conference on Software Engineering
+  link: https://conf.researchr.org/track/icse-2024/icse-2024-research-track?
+  deadline: ["2023-08-01 23:59"]
+  place: Lisbon, Portugal
+  tags: [SE]
+
 - name: VMCAI
   year: 2024
   date: "January 15 - 16"
