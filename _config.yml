@@ -4,7 +4,7 @@ author: SichaoYang
 
 domain: "sichao-yang.github.io"
 # local debug: comment out baseurl and run `bundle exec jekyll serve`
-# baseurl: "https://sichao-yang.github.io/ai4eda-deadlines"
+baseurl: "https://sichao-yang.github.io/ai4eda-deadlines"
 
 github_username: Sichao-Yang
 github_repo: ai4eda-deadlines
