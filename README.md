@@ -1,6 +1,6 @@
 # EDA and Formal Verification deadlines countdown
 
-Based on [ai-deadlines](https://aideadlin.es) by @abshkdz
+Based on [ai-deadlines](https://aideadlin.es) by @abshkdz and [EDA_FV](https://github.com/Gy-Hu/EDA_FV_conference_deadline.git) by @Gy-Hu
 
 ## Adding/updating a conference
 
